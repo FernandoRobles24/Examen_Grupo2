@@ -16,35 +16,33 @@ namespace Examen_Grupo2.Controllers
             try
             {
                 String jsonObject = JsonConvert.SerializeObject(sitio);
-                System.Net.Http.StringContent contenido = new StringContent(jsonObject, Encoding.UTF8, "application/json");
+                StringContent contenido = new StringContent(jsonObject, Encoding.UTF8, "application/json");
 
                 using (HttpClient client = new HttpClient())
                 {
-                    HttpResponseMessage response = null;
+                    HttpResponseMessage response = await client.PostAsync(Config.Config.EndPointCreate, contenido);
 
-                    response = await client.PostAsync(Config.Config.EndPointCreate, contenido);
-
-                    if (response != null)
+                    if (response.IsSuccessStatusCode)
                     {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            var result = response.Content.ReadAsStringAsync().Result;
-                        }
-                        else
-                        {
-                            Console.WriteLine($"Ha Ocurrido un Error: {response.ReasonPhrase}");
-                            return -1;
-                        }
+                        var result = await response.Content.ReadAsStringAsync();
+                        Console.WriteLine($"Respuesta de la API: {result}");
+                        return 1;
+                    }
+                    else
+                    {
+                        var errorContent = await response.Content.ReadAsStringAsync();
+                        Console.WriteLine($"Error: {response.ReasonPhrase}, Contenido del error: {errorContent}");
+                        return -1;
                     }
                 }
-                return 1;
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Ha Ocurrido un Error: {ex.ToString()}");
-                return -1;
+                return -1; // Indica error
             }
         }
+
 
         //Read
         public async static Task<List<Models.Sitios>> Get()

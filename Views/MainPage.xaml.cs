@@ -19,6 +19,7 @@ namespace Examen_Grupo2
         {
             InitializeComponent();
 
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("@32362e302e30h0sDyu0BPmlI9Xo3h7kZDX8f8FTPWSPhnp6iIqJ+Oew=");
             controller = new Controllers.SitiosController();
             SfSignaturePad signaturePad = new SfSignaturePad();
         }
@@ -40,7 +41,7 @@ namespace Examen_Grupo2
 
                     if (placemark != null)
                     {
-                        DescripcionEntry.Text = placemark.Thoroughfare + ", " + placemark.Locality; // Ejemplo de construcción de la descripción del lugar
+                        DescripcionEntry.Text = placemark.Thoroughfare + ", " + placemark.Locality;
                     }
                     else
                     {
@@ -132,7 +133,7 @@ namespace Examen_Grupo2
                 latitud = lati,
                 longitud = longi,
                 firma = base64String,
-                audio = Descripcion
+                audio = null
             };
 
             try

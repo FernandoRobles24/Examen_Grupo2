@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Maps.Handlers;
 using Syncfusion.Maui.Core.Hosting;
 
 namespace Examen_Grupo2
@@ -11,6 +12,11 @@ namespace Examen_Grupo2
             builder
                 .UseMauiApp<App>()
                 .ConfigureSyncfusionCore()
+                .ConfigureMauiHandlers(handlers =>
+                {
+                    handlers.AddHandler(typeof(Map), typeof(MapHandler));
+                })
+                .UseMauiMaps()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

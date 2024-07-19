@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using Microsoft.Maui.Maps.Handlers;
 using Microsoft.Maui.Controls.PlatformConfiguration;
 using Newtonsoft.Json;
+using Examen_Grupo2.Views;
 
 namespace Examen_Grupo2
 {
@@ -165,7 +166,7 @@ namespace Examen_Grupo2
 
         private void listButton_Clicked(object sender, EventArgs e)
         {
-
+           Navigation.PushAsync(new ListSitios());
         }
     }
 

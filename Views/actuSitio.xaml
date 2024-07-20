@@ -18,82 +18,82 @@
             </Frame>
 
             <Button 
-            Margin="20,20,20,0"
-            HeightRequest="50" 
-            WidthRequest="150" 
-            HorizontalOptions="Center"
-            BackgroundColor="#38cefe"
-            TextColor="Black"
-            FontAttributes="Bold"
-            FontSize="16"
-            Text="Limpiar Firma"
-            Clicked="ClearFirmaButtonClicked" />
+                Margin="20,20,20,0"
+                HeightRequest="50" 
+                WidthRequest="150" 
+                HorizontalOptions="Center"
+                BackgroundColor="#38cefe"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="16"
+                Text="Limpiar Firma"
+                Clicked="ClearFirmaButtonClicked" />
 
             <Label     
-           Text="Latitud"
-           FontSize="18"
-           FontAttributes="Bold"
-           TextColor="Black"
-           IsVisible="True"
-           HorizontalOptions="Start"
-           VerticalOptions="Center"
-           Margin="20,20,0,0"/>
+               Text="Latitud"
+               FontSize="18"
+               FontAttributes="Bold"
+               TextColor="Black"
+               IsVisible="True"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               Margin="20,20,0,0"/>
 
             <Entry 
-           x:Name="LatitudEntry"
-           IsEnabled="False"
-           Placeholder="Obteniendo datos...."
-           FontSize="16"
-           TextColor="Black"
-           Margin="15,0,20,0"/>
+               x:Name="LatitudEntry"
+               IsEnabled="False"
+               Placeholder="Obteniendo datos...."
+               FontSize="16"
+               TextColor="Black"
+               Margin="15,0,20,0"/>
 
             <Label     
-           Text="Longitud"
-           FontSize="18"
-           FontAttributes="Bold"
-           TextColor="Black"
-           IsVisible="True"
-           HorizontalOptions="Start"
-           VerticalOptions="Center"
-           Margin="20,20,0,0"/>
+               Text="Longitud"
+               FontSize="18"
+               FontAttributes="Bold"
+               TextColor="Black"
+               IsVisible="True"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               Margin="20,20,0,0"/>
 
             <Entry
-           x:Name="LongitudEntry"
-           IsEnabled="False"
-           Placeholder="Obteniendo datos...."
-           FontSize="16"
-           TextColor="Black"
-           Margin="15,0,20,0"/>
+               x:Name="LongitudEntry"
+               IsEnabled="False"
+               Placeholder="Obteniendo datos...."
+               FontSize="16"
+               TextColor="Black"
+               Margin="15,0,20,0"/>
 
             <Label     
-           Text="Descripcion"
-           FontSize="18"
-           FontAttributes="Bold"
-           TextColor="Black"
-           IsVisible="True"
-           HorizontalOptions="Start"
-           VerticalOptions="Center"
-           Margin="20,20,0,0"/>
+               Text="Descripcion"
+               FontSize="18"
+               FontAttributes="Bold"
+               TextColor="Black"
+               IsVisible="True"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               Margin="20,20,0,0"/>
 
             <Entry 
-           x:Name="DescripcionEntry"
-           Placeholder="Obteniendo datos...."
-           FontSize="16"
-           TextColor="Black"
-           Margin="15,0,20,30"/>
+               x:Name="DescripcionEntry"
+               Placeholder="Obteniendo datos...."
+               FontSize="16"
+               TextColor="Black"
+               Margin="15,0,20,30"/>
 
             <Button 
-            x:Name="saveButton"
-            Margin="20,0,20,20"
-            HeightRequest="50" 
-            WidthRequest="250" 
-            HorizontalOptions="CenterAndExpand"
-            BackgroundColor="#38cefe"
-            TextColor="Black"
-            FontAttributes="Bold"
-            FontSize="16"
-            Text="Guardar Ubicación"
-            Clicked="saveButton_Clicked"/>
+                x:Name="saveButton"
+                Margin="20,0,20,20"
+                HeightRequest="50" 
+                WidthRequest="250" 
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="#38cefe"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="16"
+                Text="Guardar Ubicación"
+                Clicked="saveButton_Clicked"/>
 
            
         </StackLayout>

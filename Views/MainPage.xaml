@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Examen_Grupo2.MainPage"     
              xmlns:signaturePad="clr-namespace:Syncfusion.Maui.SignaturePad;assembly=Syncfusion.Maui.SignaturePad"
-             Title="Ubicaciones"
+             Title="Ubicacion"
              Background="White">
 
     <ScrollView>
@@ -20,12 +20,24 @@
             </Frame>
 
             <Button 
-                Margin="20,10,20,0"
+                Margin="30,20,0,0"
                 HeightRequest="50" 
                 WidthRequest="150" 
-                HorizontalOptions="Center"
-                BackgroundColor="#2b0098"
-                TextColor="White"
+                HorizontalOptions="Start"
+                BackgroundColor="#38cefe"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="16"
+                Text="Grabar Audio"
+                Clicked="" />
+
+            <Button 
+                Margin="20,-50,30,0"
+                HeightRequest="50" 
+                WidthRequest="150" 
+                HorizontalOptions="End"
+                BackgroundColor="#38cefe"
+                TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="16"
                 Text="Limpiar Firma"
@@ -90,8 +102,8 @@
                 HeightRequest="50" 
                 WidthRequest="250" 
                 HorizontalOptions="CenterAndExpand"
-                BackgroundColor="#2b0098"
-                TextColor="White"
+                BackgroundColor="#38cefe"
+                TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="16"
                 Text="Guardar Ubicación"
@@ -103,8 +115,8 @@
                 HeightRequest="50" 
                 WidthRequest="250" 
                 HorizontalOptions="CenterAndExpand"
-                BackgroundColor="#2b0098"
-                TextColor="White"
+                BackgroundColor="#38cefe"
+                TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="16"
                 Text="Ubicaciones Guardadas"

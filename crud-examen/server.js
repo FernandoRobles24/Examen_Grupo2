@@ -85,5 +85,5 @@ app.delete('/api/sitios/:id', (req, res) => {
 
 
 app.listen(port, ()=> {
-    console.log(`Servidor ejecutandose en http://192.168.1.6:${port}`);
+    console.log(`Servidor ejecutandose en http://192.168.0.6:${port}`);
 });

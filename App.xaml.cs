@@ -1,4 +1,6 @@
-﻿namespace Examen_Grupo2
+﻿using MediaManager;
+
+namespace Examen_Grupo2
 {
     public partial class App : Application
     {
@@ -7,6 +9,11 @@
             InitializeComponent();
 
             MainPage = new AppShell();
+        }
+        protected override void OnStart()
+        {
+            base.OnStart();
+            CrossMediaManager.Current.Init();
         }
     }
 }

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:signaturePad="clr-namespace:Syncfusion.Maui.SignaturePad;assembly=Syncfusion.Maui.SignaturePad"
              x:Class="Examen_Grupo2.Views.actuSitio"
-             Title="actuSitio">
+             Title="Actualizar Sitio">
     <ScrollView>
         <StackLayout>
             <Frame
@@ -18,12 +18,12 @@
             </Frame>
 
             <Button 
-            Margin="20,10,20,0"
+            Margin="20,20,20,0"
             HeightRequest="50" 
             WidthRequest="150" 
             HorizontalOptions="Center"
-            BackgroundColor="#2b0098"
-            TextColor="White"
+            BackgroundColor="#38cefe"
+            TextColor="Black"
             FontAttributes="Bold"
             FontSize="16"
             Text="Limpiar Firma"
@@ -88,8 +88,8 @@
             HeightRequest="50" 
             WidthRequest="250" 
             HorizontalOptions="CenterAndExpand"
-            BackgroundColor="#2b0098"
-            TextColor="White"
+            BackgroundColor="#38cefe"
+            TextColor="Black"
             FontAttributes="Bold"
             FontSize="16"
             Text="Guardar Ubicación"

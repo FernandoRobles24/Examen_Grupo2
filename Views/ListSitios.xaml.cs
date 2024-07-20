@@ -1,6 +1,7 @@
 using System.Collections.ObjectModel;
 using Examen_Grupo2.Models;
 using Examen_Grupo2.Controllers;
+using MediaManager;
 
 namespace Examen_Grupo2.Views;
 
@@ -22,11 +23,6 @@ public partial class ListSitios : ContentPage
         List<Models.Sitios> emplelist = new List<Models.Sitios>();
         emplelist = await SitiosController.Get();
         listemple.ItemsSource = emplelist;
-    }
-
-    private void ToolbarItem_Clicked(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new MainPage());
     }
 
     private void listemple_SelectionChanged(object sender, SelectionChangedEventArgs e)

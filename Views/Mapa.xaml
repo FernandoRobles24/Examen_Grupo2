@@ -14,15 +14,16 @@
         
         <Button
             x:Name="btnSalir"
-            Margin="0,0,35,30"
-            Background="#00532c"
-            TextColor="White"
+            Margin="40,0,35,35"
+            Background="#38cefe"
+            TextColor="Black"
             FontAttributes="Bold"
+            FontSize="18"
             WidthRequest="150"
             HeightRequest="50"
             Clicked="btnSalir_Clicked"
             VerticalOptions="End"
-            HorizontalOptions="End"
+            HorizontalOptions="Center"
             Text="SALIR" />
     </Grid>
 </ContentPage>
